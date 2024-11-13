@@ -50,6 +50,8 @@ function Home() {
                 </div>
             )}
 
+            <h1>Tài Đẹp Trai</h1>
+
             {!loading && (
                 <>
                     <div className={cx('slideshow')}>
