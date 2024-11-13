@@ -1,0 +1,76 @@
+.wrapper {
+    width: 400px;
+    overflow: visible;
+    padding-bottom: 8px;
+}
+
+.content {
+    max-height: 66vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+// Course items
+.course-item {
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 6px;
+    margin: 0 8px;
+
+    &:hover {
+        background-color: var(--hover-color);
+    }
+}
+
+.course-link {
+    color: var(--black-color);
+    display: flex;
+    align-items: center;
+}
+
+.course-thumb {
+    background-color: #ebebeb;
+    border-radius: 8px;
+    display: block;
+    line-height: 67px;
+    max-height: 67px;
+    text-align: center;
+    width: 120px;
+}
+
+.course-info {
+    margin-left: 12px;
+    text-align: start;
+    width: 100%;
+}
+
+.course-title {
+    font-size: 1.4rem;
+}
+
+.last-completed {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.VerticalProgressBar {
+    background-color: #ddd;
+    background-color: var(--bg-color, #ddd);
+    border-radius: 4px;
+    height: 8px;
+    width: 100%;
+    margin-top: 8px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        border-radius: 4px;
+        inset: 0;
+        background-color: var(--primary-color);
+        background-color: var(--color, var(--primary-color));
+        transition: width 1s ease;
+        width: var(--progress);
+    }
+}

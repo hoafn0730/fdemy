@@ -1,0 +1,22 @@
+.wrapper {
+    padding: 20px 20px 0;
+    width: 100%;
+
+    .video {
+        border-radius: 10px;
+        overflow: hidden;
+        height: 478px;
+    }
+
+    .content {
+        position: relative;
+        min-height: 300px;
+    }
+}
+
+.openQuizBtn {
+    color: var(--primary-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+}

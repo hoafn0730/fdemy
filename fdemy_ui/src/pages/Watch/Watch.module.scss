@@ -1,0 +1,15 @@
+.wrapper {
+    .content {
+        display: flex;
+        padding: 0 20px;
+        margin-bottom: 50px;
+    }
+}
+
+.commentBtn {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,126 @@
+.wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+
+    .icon {
+        font-size: 3.2rem;
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.content {
+    --width: 100%;
+    border-radius: 8px;
+    max-width: calc(100vw - 32px);
+    min-height: 550px;
+    padding: 32px 16px 60px;
+    position: relative;
+    width: var(--width);
+}
+
+.header {
+    overflow: hidden;
+}
+
+.title {
+    color: #292929;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 12px 0;
+}
+
+.desc,
+.feedback {
+    color: var(--invalid-color);
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: min(400px, 90%);
+}
+
+.feedback {
+    text-align: start;
+    margin-top: 6px;
+}
+
+.body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+.formBody {
+    max-width: 100%;
+    width: 380px;
+}
+
+.submitBtn {
+    background-color: var(--button-color);
+    background-image: var(--button-image);
+    height: 44px;
+    margin-top: 20px;
+    width: 100%;
+    color: var(--white-color);
+    background-position: 0 0;
+    background-size: 100% 200%;
+    border: 0;
+    color: var(--white-color);
+    font-weight: 600;
+    transition: background-position 0.15s cubic-bezier(0.2, 0.2, 0.2, 1);
+}
+
+.dontHaveAcc {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 0;
+    padding: 24px 16px 0;
+    margin-top: 14px;
+}
+
+.forgotPassword {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.dontHaveAcc a,
+.forgotPassword {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.acceptTerm {
+    bottom: 0;
+    color: #666;
+    font-size: 1.1rem;
+    left: 0;
+    line-height: 1.6;
+    padding: 12px 100px;
+    position: absolute;
+    right: 0;
+}

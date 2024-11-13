@@ -1,0 +1,134 @@
+.wrapper {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--default-layout-header-height);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px;
+    z-index: 10;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--default-layout-width);
+    padding: 0 26px;
+}
+
+.logo,
+.body,
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions {
+    justify-content: flex-end;
+}
+
+.logo-link {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+
+    .icon {
+        font-size: 2.4rem;
+        margin-bottom: 4px;
+    }
+
+    strong {
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+    }
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.action-btn {
+    font-size: 2rem;
+    padding: 8px;
+    margin-left: 6px;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+
+    svg {
+        min-width: 30px;
+    }
+
+    span {
+        font-size: 1.6rem;
+    }
+
+    span.active {
+        font-weight: 700;
+    }
+
+    span.number {
+        position: absolute;
+        bottom: 14px;
+        left: 54%;
+        font-size: 1.2rem;
+        padding: 1px 5px;
+        border-radius: 10px;
+        opacity: 0.9;
+        color: var(--white-color);
+        background-color: var(--primary-color);
+    }
+
+    &.newPostBtn {
+        min-width: auto;
+        width: 30px;
+        height: 30px;
+        border: 2px solid #000;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s linear;
+        padding: 0;
+
+        &:hover {
+            svg {
+                transform: scale(108%);
+            }
+        }
+    }
+}
+
+.login-btn {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 9px 12px;
+}
+
+.btn-back {
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    margin-left: 16px;
+    font-size: 1.4rem;
+    color: #808990;
+    transition: all ease 0.3s;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    & svg {
+        font-size: 1.4rem;
+        transition: 0.3s ease;
+        margin-right: 4px;
+    }
+
+    &:hover svg {
+        transform: translateX(-4px);
+    }
+}

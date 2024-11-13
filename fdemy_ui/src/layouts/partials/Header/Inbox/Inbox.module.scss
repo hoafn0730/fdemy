@@ -1,0 +1,72 @@
+.wrapper {
+    width: 400px;
+    overflow: visible;
+}
+
+.content {
+    max-height: 68vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-bottom: 8px;
+}
+
+// Inbox items
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    margin: 4px 8px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.05);
+    }
+
+    &:hover .link {
+        color: var(--black-color);
+    }
+}
+
+.noSeen {
+    background: rgba(240, 81, 35, 0.1);
+
+    &:hover {
+        background: rgba(240, 81, 35, 0.1);
+    }
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.message {
+    text-align: start;
+    margin-left: 12px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.createdAt {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+.seeAll {
+    width: 100%;
+    font-size: 1.4rem;
+    transition: background-color 0.3s;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+
+    &:hover {
+        color: var(--primary-color);
+        background-color: rgba(22, 24, 35, 0.05);
+    }
+}

@@ -1,0 +1,39 @@
+.wrapper .tabs {
+    display: flex;
+    list-style: none;
+    margin-bottom: 10px;
+    margin-top: 16px;
+    padding-left: 0;
+
+    li + li {
+        margin-left: 24px;
+    }
+
+    a {
+        color: var(--desc-color);
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding-bottom: 14px;
+
+        &.active {
+            font-weight: 700;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                border-bottom: 2px solid var(--black-color);
+                bottom: -1px;
+                display: block;
+            }
+        }
+
+        &.active,
+        &.active:hover {
+            color: var(--black-color);
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.link {
+    border-radius: 16px;
+    display: block;
+    overflow: hidden;
+}
+
+.link,
+.thumb {
+    border-radius: 16px;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+
+.title {
+    margin: 8px 0;
+
+    a,
+    span {
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        color: #292929;
+        display: -webkit-box;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.4;
+        overflow: hidden;
+    }
+}

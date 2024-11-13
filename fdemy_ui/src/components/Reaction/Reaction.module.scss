@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    margin-left: -8px;
+}
+
+.btnReact {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+.value {
+    margin-top: 6px;
+}
+
+.btnReact + .btnReact {
+    margin-left: 10px;
+}

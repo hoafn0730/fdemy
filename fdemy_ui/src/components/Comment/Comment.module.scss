@@ -1,0 +1,99 @@
+.wrapper {
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.help {
+    font-size: 1.4rem;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 16px;
+}
+
+.avatarWrap {
+    margin-right: 10px;
+}
+
+.commentContent {
+    background-color: #f2f3f5;
+    border-radius: 16px;
+    padding: 9px 12px;
+    max-width: 500px;
+    min-width: 400px;
+}
+
+.commentContentHeading .commentAuthor {
+    color: var(--black-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.commentText,
+.showHideComment {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.commentReact {
+    display: flex;
+    margin-top: 8px;
+    min-height: 27px;
+    align-items: center;
+}
+
+.likeComment,
+.replyComment,
+.createdAt,
+.moreBtn {
+    font-size: 1.3rem;
+    margin: 0 4px;
+}
+
+.likeComment,
+.replyComment {
+    color: #e87a5a;
+    cursor: pointer;
+}
+
+.createdAt {
+    color: #999;
+}
+
+.moreBtn {
+    color: transparent;
+    font-size: 1.6rem;
+    height: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.body:hover .moreBtn {
+    background-color: transparent;
+    color: #888;
+    display: inline-block;
+}
+
+.body .moreBtn:hover {
+    color: var(--text-color);
+}
+
+.viewRepliesMore {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon {
+    margin-left: 6px;
+}
+
+.replyWrap {
+    margin-top: 10px;
+    margin-left: 50px;
+}

@@ -1,0 +1,28 @@
+.wrapper {
+    margin-bottom: 10px;
+}
+
+.heading-wrap {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.heading {
+    color: #242424;
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+.sub-heading {
+    color: #82919b;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.body {
+    min-height: 200px;
+    padding-bottom: 0;
+}

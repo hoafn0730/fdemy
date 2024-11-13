@@ -1,0 +1,70 @@
+.wrapper {
+    --wrapper-height: 55px;
+    height: var(--wrapper-height);
+    display: flex;
+    align-items: center;
+    background-color: #29303b;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-back {
+    display: flex;
+    height: var(--wrapper-height);
+    transition: background-color 0.2s linear;
+    width: 60px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.logo {
+    margin-left: 8px;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+
+    .icon {
+        font-size: 2.4rem;
+        margin-right: 10px;
+    }
+
+    &:hover {
+        color: var(--primary-color);
+
+        .icon {
+            color: var(--primary-color);
+        }
+    }
+}
+
+.icon {
+    font-size: 1.6rem;
+    margin: auto;
+    color: var(--white-color);
+}
+
+.actions {
+    margin-left: auto;
+    margin-right: 20px;
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+
+.process {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 9px 4px;
+    border-radius: 50%;
+    border: 1px solid var(--white-color);
+}
+
+.completed-msg {
+    margin-left: 6px;
+}

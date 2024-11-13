@@ -1,0 +1,55 @@
+.item {
+    border: 2px solid #e8e8e8;
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 16px 24px 22px;
+    position: relative;
+}
+
+.title {
+    margin-top: 0;
+    padding-right: 24px;
+    margin-bottom: 6px;
+
+    a {
+        color: var(--text-color);
+        font-size: 1.9rem;
+        line-height: 1.6;
+    }
+}
+
+.author {
+    color: var(--desc-color);
+    font-size: 1.4rem;
+
+    a {
+        color: #029e74;
+    }
+}
+
+.more {
+    color: #666;
+    font-size: 1.6rem;
+    margin-left: 4px;
+    padding: 4px 8px;
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.noResult {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-top: 32px;
+
+    p {
+        margin: 14px 0;
+    }
+
+    a {
+        color: #029e74;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,35 @@
+.wrapper {
+    background-color: rgba(30, 30, 28, 0.8);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 24;
+}
+
+.body {
+    background-color: transparent;
+    overflow: hidden;
+    color: var(--white-color);
+    padding: 12px 28px 28px;
+    position: relative;
+    width: 100%;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    cursor: pointer;
+    font-size: 3.2rem;
+}
+
+.content {
+    height: 482px;
+}

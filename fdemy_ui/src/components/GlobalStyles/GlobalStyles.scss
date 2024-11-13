@@ -1,0 +1,162 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --primary-color: #fe2c55;
+    --black-color: #000;
+    --text-color: #161823;
+    --white-color: #fff;
+    --desc-color: #0000008a;
+    --hover-color: #16182308;
+    --invalid-color: #f33a58;
+    --button-color: #1dbfaf;
+    --button-image: linear-gradient(70.06deg, #2cccff -5%, #22dfbf 106%);
+
+    // default layout
+    --default-layout-header-height: 66px;
+    --default-layout-width: 100%;
+    --default-layout-horizontal-spacer: 24px;
+}
+
+.dark {
+    background-color: #2a2438;
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    overflow-y: overlay;
+}
+
+// scrollbar
+html ::-webkit-scrollbar {
+    border-radius: 0px;
+    width: 8px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.1);
+}
+
+html ::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.avatar {
+    width: 30px;
+    border-radius: 50%;
+}
+
+// Custom tippy tooltip
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+    }
+
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+    }
+}
+
+// Custom slick slider
+body .slick-list {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+body .slick-dots {
+    bottom: -38px;
+    left: 40px;
+    text-align: left;
+}
+
+body .slick-dots li,
+body .slick-dots li button {
+    width: 32px;
+}
+
+body .slick-dots li.slick-active,
+body .slick-dots li.slick-active button {
+    width: 50px;
+}
+
+body .slick-dots li button:before {
+    background-color: #dce0e3;
+    border-radius: 4px;
+    content: '';
+    height: 8px;
+    margin-right: 10px;
+    opacity: 1;
+    transition: width 0.3s linear, background-color 0.3s linear;
+    width: 32px;
+}
+
+body .slick-dots li.slick-active button:before {
+    background-color: #9aa6af;
+    width: 50px;
+}
+
+// Custom editor
+body .rc-md-editor {
+    border: none;
+}
+.rc-md-editor .editor-container > .section {
+    border-right: none;
+}
+
+body .rc-md-editor .editor-container .sec-html {
+    border-left: 1px solid #ebebeb;
+}
+
+body .rc-md-editor:not(.full) .rc-md-navigation {
+    padding-left: 0;
+    background-color: #fff;
+    border-bottom: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 66px;
+    z-index: 1;
+}

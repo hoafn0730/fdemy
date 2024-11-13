@@ -1,0 +1,89 @@
+.wrapper {
+    .headerSticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 66px;
+        background-color: var(--white-color);
+        padding-bottom: 4px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+    }
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 16px 0 12px;
+}
+
+.curriculumPanel {
+    margin: 12px 0 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.panelGroup {
+    min-height: 30px;
+    height: 300px;
+
+    overflow: hidden;
+    position: relative;
+    transition: all ease 0.3s;
+
+    &.show {
+        height: auto;
+
+        &::after {
+            background: transparent;
+        }
+    }
+
+    .panel {
+        background: #f5f5f5;
+        border: 1px solid #ebebeb;
+        border-radius: 6px;
+        margin-bottom: 8px;
+    }
+
+    &:after {
+        background: linear-gradient(180deg, rgba(151, 145, 255, 0) 0%, rgba(255, 255, 255, 0.6) 98%);
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        display: block;
+        transition: all 0.3s linear;
+    }
+}
+
+.panelBody {
+    padding: 0;
+}
+
+.lessonItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 48px;
+    overflow: hidden;
+    padding: 0 30px 0 36px;
+    position: relative;
+
+    .icon {
+        color: rgba(240, 81, 35, 0.4);
+        margin-right: 4px;
+    }
+}
+
+.seeMore {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}

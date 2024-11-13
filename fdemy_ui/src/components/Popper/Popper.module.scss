@@ -1,0 +1,46 @@
+.wrapper {
+    box-shadow: 0 -4px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: var(--white-color);
+    overflow: hidden;
+    animation: fadeIn 0.3s ease;
+    transition: all 0.3s ease-in-out;
+    will-change: opacity, transform;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+
+    h6 {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .btn-header {
+        font-size: 1.4rem;
+        padding: 8px;
+        min-width: auto;
+        color: var(--primary-color);
+    }
+}
+
+.styledArrow {
+    position: absolute;
+    border-width: 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

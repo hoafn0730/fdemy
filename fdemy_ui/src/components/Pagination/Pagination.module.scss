@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.btn {
+    min-width: 44px;
+    border-radius: 0;
+
+    &.active {
+        border-bottom: 4px solid var(--primary-color);
+    }
+}
+
+.next {
+    transition: all ease 0.3s;
+
+    &:hover {
+        transform: translateX(4px);
+    }
+}
+
+.prev {
+    transition: all ease 0.3s;
+
+    &:hover {
+        transform: translateX(-4px);
+    }
+}
